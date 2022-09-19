@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<!-- set document to HTML-->
+<html>
+    <Head>
+        <!-- set up various styles for the website-->
+        <style>
+            /* sets the size of the images */
+            img { 
+                width: 60%;
+            }
+            /* make the header white */
+            h1 {
+                color: blanchedalmond;
+            }
+            /* make the background black */
+            body {
+                background-color: black;
+            }
+        </style>
+    </Head>
+    <body>
+        <script>
+            // make the timer variable
+            let timer = 50;
+            // create the blastoff function
+            function blastoff (){
+                //minus 1 from the timer until it reaches 0
+                while (timer>0) {
+                    timer--;
+                }
+            }
+        </script>
+        <h1 style="text-align:center;"> Welcome to Mission Control</h1>
+        <img src="https://image.shutterstock.com/image-vector/flying-mission-control-center-monitoring-260nw-1669475761.jpg" alt="Mission Control Poster">
+        <button onclick = "blastoff()"> Begin Blastoff </button>
+        <h1 id="timer"></h1>
+    </body>
+</html>
